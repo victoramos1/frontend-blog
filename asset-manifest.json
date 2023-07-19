@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/frontend-blog/static/css/main.b7be99b8.css",
+    "main.js": "/frontend-blog/static/js/main.c6c91892.js",
+    "static/media/wp.jpg": "/frontend-blog/static/media/wp.abaff2d09a1d20bf51b4.jpg",
+    "static/media/logo.png": "/frontend-blog/static/media/logo.fafc18d624e6ed26ee2e.png",
+    "index.html": "/frontend-blog/index.html",
+    "main.b7be99b8.css.map": "/frontend-blog/static/css/main.b7be99b8.css.map",
+    "main.c6c91892.js.map": "/frontend-blog/static/js/main.c6c91892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7be99b8.css",
+    "static/js/main.c6c91892.js"
+  ]
+}
