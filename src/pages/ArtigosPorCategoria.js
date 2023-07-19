@@ -28,7 +28,7 @@ function ArtigosPorCategoria() {
                 <img src={artigo.imagem} alt="Imagem de turismo para a galeria" />
                 <div className="divOculta">
                   <h3>{artigo.titulo}</h3>
-                  <Link to={`/${artigo.id}`}><button className="btnHome">Veja mais</button></Link>
+                  <Link to={`https://victoramos1.github.io/frontend-blog/${artigo.id}`}><button className="btnHome">Veja mais</button></Link>
                 </div>
               </div>
             </div>

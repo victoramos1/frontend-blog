@@ -32,7 +32,7 @@ function ArtigoAberto() {
           console.log(`Artigo ${id} deletado com sucesso`)
           toast.success("Artigo excluído com sucesso")
           setTimeout(() => {
-            window.location.href = `/`
+            window.location.href = `https://victoramos1.github.io/frontend-blog/`
           }, 2000)
         }
       )
@@ -66,7 +66,7 @@ function ArtigoAberto() {
           <img id="wpArtigo" src={artigo.imagem} alt="Capa do artigo"></img>
         </div>
         <div className="divBotoes">
-          <Link to={"/"}><button className="btnOpcoes">Voltar</button></Link>
+          <Link to={"https://victoramos1.github.io/frontend-blog/"}><button className="btnOpcoes">Voltar</button></Link>
         </div>
         <div className="artigo">
           <h1>{artigo.titulo}</h1>
@@ -107,7 +107,7 @@ function ArtigoAberto() {
           <img id="wpArtigo" src={artigo.imagem} alt="Capa do artigo"></img>
         </div>
         <div className="divBotoes">
-          <Link to={"/"}><button className="btnOpcoes">Voltar</button></Link>
+          <Link to={"/https://victoramos1.github.io/frontend-blog/"}><button className="btnOpcoes">Voltar</button></Link>
           <Link to={`/editar/${artigo.id}`}><button className="btnOpcoes">Editar postagem</button></Link>
           <button className="btnOpcoes" onClick={apagaArtigo}>Excluir postagem</button>
         </div>

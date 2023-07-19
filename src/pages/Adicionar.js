@@ -35,7 +35,7 @@ function Adicionar() {
         .then(resposta => {
           toast.success("Artigo incluído com sucesso")
           setTimeout(() => {
-            window.location.href = `/`
+            window.location.href = `https://victoramos1.github.io/frontend-blog/`
           }, 2000)
         }
       )
@@ -46,7 +46,7 @@ function Adicionar() {
     if (token !== "false") {
       validaAcesso()
     } else {
-      window.location.href = "/"
+      window.location.href = "https://victoramos1.github.io/frontend-blog/"
     }
   }, [])
 
@@ -63,7 +63,7 @@ function Adicionar() {
     return (
       <div>
         <Navbar tipo="azulMarinho" />
-        <Link to={"/"}><button className="btnOpcoes3">Voltar</button></Link>
+        <Link to={"https://victoramos1.github.io/frontend-blog/"}><button className="btnOpcoes3">Voltar</button></Link>
         <div className="container">
           <h3>Adicionar novo artigo</h3>
           <label htmlFor="titulo">Título</label>
