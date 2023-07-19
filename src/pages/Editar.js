@@ -52,7 +52,7 @@ function Editar() {
           console.log("Dados enviados com sucesso")
           toast.success("Artigo editado com sucesso")
           setTimeout(() => {
-            window.location.href = `https://victoramos1.github.io/frontend-blog/${id}`
+            window.location.href = `https://victoramos1.github.io/frontend-blog/#/${id}`
           }, 2000)
         }
       )
@@ -79,7 +79,7 @@ function Editar() {
     return (
       <div>
         <Navbar tipo="azulMarinho" />
-        <Link to={`https://victoramos1.github.io/frontend-blog/${id}`}><button className="btnOpcoes2">Voltar</button></Link>
+        <Link to={`/${id}`}><button className="btnOpcoes2">Voltar</button></Link>
         <div className="container3">
           <h3>Editar artigo</h3>
           <label htmlFor="titulo">Título</label>
