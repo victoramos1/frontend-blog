@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.divWallpaper2 {
+  width: 90rem;
+  height: 37.5rem;
+  margin: 3.125rem auto 1.875rem auto;
+}
+
+#wpArtigo {
+  width: 90rem;
+  height: 37.5rem;
+  margin: 0 auto;
+  border-radius: 0.625rem;
+}
+
+.artigo {
+  width: 62.5rem;
+  min-height: 75rem;
+  font-family: "Open Sans", sans-serif;
+  margin: 1.875rem auto 3.75rem auto;
+  text-align: justify;
+  color: #000000;
+}
+
+.artigo h1 {
+  margin-bottom: 1.25rem;
+  font-size: 2.5rem;
+}
+
+.artigo h3 {
+  margin-bottom: 1.875rem;
+}
+
+.divBotoes {
+  width: 62.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btnOpcoes {
+  padding: 0.625rem;
+  width: 8.125rem;
+  margin-left: 0.625rem;
+  background-color: #00095a;
+  border: none;
+  color: #ffffff;
+  border-radius: 0.438rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btnOpcoes:hover {
+  transform: scale(1.05);
+}
+
+.divSobre {
+  width: 100vw;
+  height: 25rem;
+  background-color: #000000;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divSobre img {
+  width: 12.5rem;
+  margin-left: 3.125rem;
+  transition: 0.5s;
+}
+
+.divSobre img:hover {
+  transform: rotate(15deg);
+}
+
+.divSobre p {
+  width: 31.25rem;
+  text-align: justify;
+  margin-right: 6.25rem;
+}

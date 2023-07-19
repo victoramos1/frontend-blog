@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.divArtigos {
+  width: 90rem;
+  margin: 0 auto;
+  margin-top: 3.125rem;
+  height: 68.75rem;
+}
+
+.divArtigos h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.125rem;
+  text-align: center;
+  padding-top: 5rem;
+  margin-bottom: 3.125rem;
+}
+
+.layoutCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+
+.card {
+  width: 28.125rem;
+  height: 25rem;
+  margin-bottom: 1.875rem;
+  border-radius: 0.625rem;
+  position: relative;
+}
+
+.divVisivel {
+  width: 28.125rem;
+  height: 25rem;
+  margin-bottom: 1.875rem;
+  border-radius: 0.625rem;
+}
+
+.divVisivel img {
+  width: 28.125rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+  transition: 0.5s;
+}
+
+.divOculta {
+  width: 28.125rem;
+  height: 25rem;
+  border-radius: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s;
+}
+
+.divOculta h3 {
+  font-family: "Open Sans", sans-serif;
+  width: 26.25rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.btnHome {
+  padding: 0.625rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.625rem;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.divVisivel:hover .divOculta {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+.divVisivel:hover img {
+  transform: scale(0.95);
+}
+
+.divSobre {
+  width: 100vw;
+  height: 25rem;
+  background-color: #000000;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.divSobre img {
+  width: 12.5rem;
+  margin-left: 3.125rem;
+  transition: 0.5s;
+}
+
+.divSobre img:hover {
+  transform: rotate(15deg);
+}
+
+.divSobre p {
+  width: 31.25rem;
+  text-align: justify;
+  margin-right: 6.25rem;
+}

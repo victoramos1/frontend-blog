@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerCategorias {
+  margin: 0 auto;
+  height: 25rem;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+.containerCategorias h2 {
+  margin: 6.25rem 0 3.125rem 0;
+  font-size: 3.125rem;
+  color: #000000;
+  text-align: center;
+}
+
+.linkCategorias {
+  text-decoration: none;
+}
+
+.containerCategorias h3 {
+  color: #000000;
+  text-align: center;
+  margin: 0.9375rem;
+  font-size: 1.25rem;
+}
