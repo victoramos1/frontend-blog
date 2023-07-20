@@ -13,6 +13,7 @@ function Home() {
     fetch("https://backend-blog-396v.onrender.com/artigos")
       .then(resultado => resultado.json())
       .then((dados) => setArtigos(dados))
+      window.alert("Os artigos na homepage podem demorar a carregar nesse primeiro instante, pois o backend está hospedado em um serviço grátis sem muitos recursos. Em no máximo 1 minuto, tudo estará carregado.")
     window.scrollTo(0, 0)
   }, []);
 

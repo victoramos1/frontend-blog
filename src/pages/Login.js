@@ -28,6 +28,10 @@ function Login() {
   }
 
   useEffect(() => {
+    window.alert("Caso deseje editar ou apagar algum artigo, peço por gentileza que cadastre um artigo próprio e faça as alterações necessárias sem alterar os artigos pertencentes do blog.")
+  })
+
+  useEffect(() => {
     if (token) {
       validacaoLogin()
     }
