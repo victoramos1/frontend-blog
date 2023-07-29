@@ -38,7 +38,7 @@ function Adicionar() {
             window.location.href = `https://victoramos1.github.io/frontend-blog/`
           }, 2000)
         }
-      )
+        )
     }
   }
 
@@ -63,9 +63,8 @@ function Adicionar() {
     return (
       <div>
         <Navbar tipo="azulMarinho" />
-        <Link to={"/"}><button className="btnOpcoes3">Voltar</button></Link>
         <div className="container">
-          <h3>Adicionar novo artigo</h3>
+            <h3>Adicionar novo artigo</h3>
           <label htmlFor="titulo">Título</label>
           <input type="text" name="titulo" placeholder="Digite o título do artigo" onChange={(e) => setTitulo(e.target.value)}></input>
           <label htmlFor="subtiulo">Subtítulo</label>

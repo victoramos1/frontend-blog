@@ -5,91 +5,227 @@
   padding: 0;
 }
 
-.transparente {
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.1);
-  font-family: "Open Sans", sans-serif;
-  position: absolute;
+  .transparente {
+    width: 100vw;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+  }
+
+  .transparente ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .transparente ul li {
+    list-style: none;
+    margin: 2.5rem 1.875rem 0 1.25rem;
+    color: #ffffff;
+    font-size: 1.063rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .transparente ul li:hover {
+    transform: scale(1.20);
+  }
+
+  .link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .azulMarinho {
+    width: 100vw;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #00095a;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .azulMarinho ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .azulMarinho ul li {
+    list-style: none;
+    margin: 2.5rem 1.875rem 0 1.25rem;
+    color: #ffffff;
+    font-size: 1.063rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .azulMarinho ul li:hover {
+    transform: scale(1.20);
+  }
+
+  #logo {
+    width: 4.375rem;
+    height: 4.375rem;
+    margin: 0.625rem 0 0 2.5rem;
+    transition: 0.5s;
+  }
+
+  #logo:hover {
+    transform: rotate(15deg);
+  }
+
+  #btn {
+    margin-top: 2.188rem;
+    background-color: white;
+    padding: 0.313rem 1.25rem;
+    border-radius: 0.625rem;
+    color: rgb(38, 151, 185);
+    font-weight: bolder;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #btn:hover {
+    transform: scale(1.10);
+  }
+
+@media (max-width: 710px) {
+  .transparente,
+  .azulMarinho {
+    display: none;
+  }
 }
 
-.transparente ul {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 0px) and (max-width: 710px) {
+  .divPrincipal {
+    height: 3.125rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0.0063rem 0.0063rem 0.188rem rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+
+  #menu {
+    width: 1.25rem;
+    cursor: pointer;
+    margin-right: 1.563rem;
+  }
+
+  .divPrincipal button {
+    background: none;
+    border: none;
+  }
+
+  .semfundo {
+    display: none;
+  }
+
+  .fundoEscuro {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 50;
+    transform-style: preserve-3d;
+  }
+
+  .semBarra {
+    transform: translateX(-350px);
+    height: 100%;
+    transition: 0.3s;
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .barraLateral {
+    background-color: white;
+    width: 12.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.0063rem 0.0063rem 0.188rem rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 0%;
+    transition: 0.3s;
+    transform: translate(0px);
+    z-index: 100;
+    opacity: 1;
+  }
+
+  .div_esquerda {
+    width: 100%;
+    font-family: 'SoDo Sans SemiBold', sans-serif;
+    font-weight: 100;
+    font-size: 0.875rem;
+    border-bottom: 0.0063rem solid rgba(0, 0, 0, .2);
+  }
+
+  .div_esquerda li {
+    padding: 0.938rem 0 0.938rem 1.875rem;
+    margin: 0.625rem 0;
+  }
+
+  .div_esquerda li:first-child {
+    padding: 0.938rem 0 0.938rem 1.875rem;
+    margin: 0 0 0.625rem 0;
+  }
+
+  .div_esquerda li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .div_direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .btn_login {
+    border-radius: 3.125rem;
+    padding: 0.75rem 1rem;
+    font-family: 'SoDo Sans SemiBold';
+    line-height: 1.2;
+    background-color: rgba(0, 0, 0, .87);
+    border: 0.0063rem solid rgba(0, 0, 0, .87);
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 0.938rem;
+    margin: 1.25rem 0 0 0;
+    width: 9.375rem;
+    transition: 0.2s;
+  }
+
+  .btn_login:hover {
+    transform: scale(0.9);
+    box-shadow: 0.0063rem 0.0063rem 0.0063rem rgba(0, 0, 0, .87);
+    cursor: pointer;
+  }
 }
 
-.transparente ul li {
-  list-style: none;
-  margin: 40px 30px 0 20px;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: 0.5s;
-}
+@media(min-width: 711px) {
+  .divPrincipal {
+    display: none;
+  }
 
-.transparente ul li:hover {
-  transform: scale(1.20);
-}
-
-.link {
-  text-decoration: none;
-}
-
-.azulMarinho {
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #00095a;
-  font-family: "Open Sans", sans-serif;
-}
-
-.azulMarinho ul {
-  display: flex;
-  flex-direction: row;
-}
-
-.azulMarinho ul li {
-  list-style: none;
-  margin: 40px 30px 0 20px;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: bolder;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.azulMarinho ul li:hover {
-  transform: scale(1.20);
-}
-
-#logo {
-  width: 70px;
-  height: 70px;
-  margin: 10px 0 0 40px;
-  transition: 0.5s;
-}
-
-#logo:hover {
-  transform: rotate(15deg);
-}
-
-#btn {
-  margin-top: 35px;
-  background-color: white;
-  padding: 5px 20px;
-  border-radius: 10px;
-  color: rgb(38, 151, 185);
-  font-weight: bolder;
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-#btn:hover {
-  transform: scale(1.10);
+  .semBarra {
+    display: none;
+  }
 }

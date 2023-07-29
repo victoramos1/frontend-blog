@@ -29,3 +29,15 @@
   margin: 0.9375rem;
   font-size: 1.25rem;
 }
+
+@media(min-width: 360px) and (max-width: 450px) {
+  .containerCategorias h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media(min-width: 280px) and (max-width: 359px) {
+  .containerCategorias h2 {
+    font-size: 2.188rem;
+  }
+}

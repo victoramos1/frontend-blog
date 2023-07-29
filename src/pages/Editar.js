@@ -79,7 +79,6 @@ function Editar() {
     return (
       <div>
         <Navbar tipo="azulMarinho" />
-        <Link to={`/${id}`}><button className="btnOpcoes2">Voltar</button></Link>
         <div className="container3">
           <h3>Editar artigo</h3>
           <label htmlFor="titulo">Título</label>

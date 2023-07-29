@@ -14,7 +14,7 @@
   font-size: 3.125rem;
   font-family: "Open Sans", sans-serif;
   position: absolute;
-  top: 38%;
+  top: 23.125rem;
   left: 1.875%;
   color: #ffffff;
 }
@@ -51,7 +51,7 @@
   height: 68.75rem;
 }
 
-.divArtigos h3 {
+#h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 3.125rem;
   text-align: center;
@@ -61,6 +61,7 @@
 
 .layoutCards {
   display: grid;
+  place-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
 }
@@ -155,4 +156,227 @@
   width: 31.25rem;
   text-align: justify;
   margin-right: 6.25rem;
+}
+
+@media(min-width: 1000px) and (max-width: 1499px) {
+  .divArtigos {
+    width: 62.5rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 999px) {
+  .divWallpaper {
+    height: 30rem;
+  }
+
+  .divWallpaper h2 {
+    width: 100vw;
+    font-size: auto;
+    text-align: center;
+    margin-left: -1.041rem;
+    top: 15.625rem;
+  }
+
+  #wp {
+    width: 100vw;
+    height: 43.75rem;
+  }
+
+  .divArtigos {
+    width: 37.5rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .divSobre img {
+    margin-left: 3.125rem;
+    width: 6.25rem;
+  }
+
+  .divSobre p {
+    margin-right: 3.125rem;
+    max-width: 23.125rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 599px) {
+  .divWallpaper {
+    height: 24rem;
+  }
+
+  .divWallpaper h2 {
+    width: 100vw;
+    font-size: 2.375rem;
+    text-align: center;
+    margin-left: -0.625rem;
+    top: 13.75rem;
+  }
+
+  #wp {
+    width: 100vw;
+    height: 37.5rem;
+  }
+  
+  .divArtigos {
+    width: 31.25rem;
+    height: auto;
+  }
+
+  #h3 {
+    font-size: 2.5rem;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .divSobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divSobre img {
+    display: none;
+  }
+
+  .divSobre p {
+    max-width: 23.125rem;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 359px) and (max-width: 499px) {
+  .divWallpaper {
+    height: 17rem;
+  }
+
+  .divWallpaper h2 {
+    width: 100vw;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-left: -0.625rem;
+    top: 10.625rem;
+  }
+
+  #wp {
+    width: 100vw;
+    height: 31.25rem;
+  }
+
+  .divArtigos {
+    width: 1.875rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  #h3 {
+    font-size: 1.875rem;
+  }
+
+  .card {
+    width: 18.75rem;
+  }
+
+  .divVisivel {
+    width: 18.75rem;
+  }
+
+  .divVisivel img {
+    width: 18.75rem;
+  }
+
+  .divOculta {
+    width: 18.75rem;
+  }
+
+  .divSobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divSobre img {
+    display: none;
+  }
+
+  .divSobre p {
+    max-width: 20.625rem;
+    font-size: 0.875rem;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 280px) and (max-width: 358px) {
+  .divWallpaper {
+    height: 14rem;
+  }
+
+  .divWallpaper h2 {
+    width: 100vw;
+    font-size: 1.625rem;
+    text-align: center;
+    margin-left: -0.625rem;
+    top: 9.375rem;
+  }
+
+  #wp {
+    width: 100vw;
+    height: 28.125rem;
+  }
+
+  .divArtigos {
+    width: 15rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .divVisivel {
+    width: 15rem;
+  }
+
+  #h3 {
+    font-size: 1.5rem;
+  }
+
+  .divVisivel img {
+    width: 15rem;
+  }
+
+  .divOculta {
+    width: 15rem;
+  }
+
+  .divOculta h3 {
+    width: 15rem;
+    font-size: 1rem;
+  }
 }

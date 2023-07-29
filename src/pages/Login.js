@@ -28,8 +28,8 @@ function Login() {
   }
 
   useEffect(() => {
-    window.alert("Caso deseje editar ou apagar algum artigo, peço por gentileza que cadastre um artigo próprio e faça as alterações necessárias sem alterar os artigos pertencentes do blog.")
-  })
+    
+  },[])
 
   useEffect(() => {
     if (token) {
@@ -44,6 +44,7 @@ function Login() {
     if (tokenCheck && tokenCheck.exp > timeStamp) {
       toast.success("Login realizado com sucesso")
       localStorage.setItem("isLogged", token)
+      window.alert("Caso deseje editar ou apagar algum artigo, peço por gentileza que cadastre um artigo próprio e faça as alterações necessárias sem alterar os artigos pertencentes do blog.")
       setTimeout(() => {
         window.location.href = "https://victoramos1.github.io/frontend-blog/"
       }, 2000)

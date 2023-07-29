@@ -3,25 +3,6 @@
   padding: 0;
 }
 
-.btnOpcoes3 {
-  padding: 0.625rem;
-  width: 8.125rem;
-  margin-left: 0.625rem;
-  background-color: #00095a;
-  border: none;
-  color: #ffffff;
-  border-radius: 0.438rem;
-  cursor: pointer;
-  position: absolute;
-  top: 37%;
-  left: 62.5%;
-  transition: 0.5s;
-}
-
-.btnOpcoes3:hover {
-  transform: scale(0.95);
-}
-
 .container {
   margin: 12.5rem auto;
   width: 50rem;
@@ -76,4 +57,70 @@
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media(min-width: 650px) and (max-width:900px) {
+  .container {
+    width: 80vw;
+  }
+
+  
+  .container input {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container textarea {
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  .btn2 {
+    width: 76vw;
+  }
+}
+
+@media(min-width: 400px) and (max-width:649px) {
+  .container {
+    width: 85vw;
+  }
+
+  
+  .container input {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .container textarea {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .btn2 {
+    width: 76vw;
+  }
+}
+
+@media(min-width: 280px) and (max-width:399px) {
+  .container {
+    width: 80vw;
+  }
+
+  .container h3 {
+    font-size: 1.063rem;
+  }
+
+  .container input {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container textarea {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+  .btn2 {
+    width: 71vw;
+  }
 }

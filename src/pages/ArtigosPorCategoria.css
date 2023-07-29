@@ -117,3 +117,166 @@
   text-align: justify;
   margin-right: 6.25rem;
 }
+
+@media(min-width: 1000px) and (max-width: 1499px) {
+  .divArtigos {
+    width: 62.5rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 999px) {
+  .divArtigos {
+    width: 37.5rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .divSobre img {
+    margin-left: 3.125rem;
+    width: 6.25rem;
+  }
+
+  .divSobre p {
+    margin-right: 3.125rem;
+    max-width: 23.125rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media(min-width: 500px) and (max-width: 599px) {
+  .divArtigos {
+    width: 3125rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .divSobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divSobre img {
+    display: none;
+  }
+
+  .divSobre p {
+    max-width: 23.125rem;
+    font-size: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 359px) and (max-width: 499px) {
+  .divArtigos {
+    width: 20rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 18.75rem;
+  }
+
+  .divVisivel {
+    width: 18.75rem;
+  }
+
+  .divVisivel img {
+    width: 18.75rem;
+  }
+
+  .divOculta {
+    width: 18.75rem;
+  }
+
+  .divOculta h3 {
+    width: 18.75rem;
+    font-size: 1rem;
+  }
+
+  .divSobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divSobre img {
+    display: none;
+  }
+
+  .divSobre p {
+    max-width: 20.625rem;
+    font-size: 0.875rem;
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 280px) and (max-width: 358px) {
+  .divArtigos {
+    width: 15rem;
+    height: auto;
+  }
+
+  .layoutCards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 15rem;
+  }
+
+  .divVisivel {
+    width: 15rem;
+  }
+
+  .divVisivel img {
+    width: 15rem;
+  }
+
+  .divOculta {
+    width: 15rem;
+  }
+
+  .divOculta h3 {
+    width: 15rem;
+    font-size: 1rem;
+  }
+
+  .divSobre {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divSobre img {
+    display: none;
+  }
+
+  .divSobre p {
+    max-width: 15rem;
+    font-size: 0.875rem;
+    margin-right: 0;
+  }
+}

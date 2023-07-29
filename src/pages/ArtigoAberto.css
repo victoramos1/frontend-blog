@@ -88,3 +88,147 @@
   text-align: justify;
   margin-right: 6.25rem;
 }
+
+@media(min-width: 1100px) and (max-width: 1440px) {
+  .divWallpaper2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #wpArtigo {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+  }
+}
+
+@media(min-width: 850px) and (max-width: 1099px) {
+  .divWallpaper2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #wpArtigo {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .artigo {
+    width: 48.125rem;
+    height: auto;
+  }
+
+  .divBotoes {
+    width: 48.125rem;
+  }
+}
+
+@media(min-width: 650px) and (max-width: 849px) {
+  .divWallpaper2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #wpArtigo {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .artigo {
+    width: 37.5rem;
+    height: auto;
+  }
+
+  .divBotoes {
+    width: 37.5rem;
+  }
+
+  .artigo h1 {
+    font-size: 1.875rem;
+  }
+
+  .artigo h3 {
+    font-size: 1.563rem;
+  }
+
+}
+
+@media(min-width: 400px) and (max-width: 649px) {
+  .divWallpaper2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #wpArtigo {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .artigo {
+    width: 90vw;
+    height: auto;
+  }
+
+  .divBotoes {
+    width: 90vw;
+  }
+
+  .btnOpcoes {
+    width: 6.25rem;
+    font-size: 0.625rem;
+  }
+
+  .artigo h1 {
+    font-size: 1.25rem;
+  }
+
+  .artigo h3 {
+    font-size: 1.063rem;
+  }
+}
+
+@media(min-width: 280px) and (max-width: 399px) {
+  .divWallpaper2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+  }
+
+  #wpArtigo {
+    width: 100vw;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .divBotoes {
+    width: 90vw;
+    justify-content: center;
+  }
+
+  .btnOpcoes {
+    width: 5rem;
+    height: 3.125rem;
+    font-size: 0.75rem;
+    margin: 0 0.313rem;
+  }
+
+  .artigo {
+    width: 90vw;
+    height: auto;
+  }
+
+  .artigo h1 {
+    font-size: 1.25rem;
+  }
+
+  .artigo h3 {
+    font-size: 1.063rem;
+  }
+}

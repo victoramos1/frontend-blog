@@ -77,3 +77,69 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+@media(min-width: 650px) and (max-width:900px) {
+  .container3 {
+    width: 80vw;
+  }
+
+  
+  .container3 input {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container3 textarea {
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  .btn3 {
+    width: 76vw;
+  }
+}
+
+@media(min-width: 400px) and (max-width:649px) {
+  .container3 {
+    width: 85vw;
+  }
+
+  
+  .container3 input {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .container3 textarea {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .btn3 {
+    width: 76vw;
+  }
+}
+
+@media(min-width: 280px) and (max-width:399px) {
+  .container3 {
+    width: 80vw;
+  }
+
+  .container3 h3 {
+    font-size: 1.063rem;
+  }
+
+  .container3 input {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container3 textarea {
+    width: 79%;
+    margin: 0 auto;
+  }
+
+  .btn3 {
+    width: 71vw;
+  }
+}

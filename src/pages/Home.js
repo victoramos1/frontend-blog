@@ -7,13 +7,32 @@ import React, { useState, useEffect } from "react"
 
 function Home() {
 
-  const [artigos, setArtigos] = useState([]);
+  const [artigos, setArtigos] = useState([])
+  
+  useEffect(()=>{
+    let mensagemMostrada = localStorage.getItem("mensagem")
+
+    if (!mensagemMostrada) {
+      window.alert("Os artigos na homepage e as categorias podem demorar a carregar nesse primeiro instante, pois o backend está hospedado em um serviço grátis que fica hibernando quando não usado. Em no máximo 2 minutos, tudo estará carregado e você verá tudo sem precisar aguardar após esse primeiro carregamento. Se as informações não aparecerem automaticamente após 2 minutos, saia e entre na aplicação novamente")
+
+      localStorage.setItem("mensagem", true)
+    }
+
+    const limpaLocalStorage = () => {
+      localStorage.removeItem("mensagem")
+    }
+  
+    window.addEventListener("beforeunload", limpaLocalStorage)
+  
+    return () => {
+      window.removeEventListener("beforeunload", limpaLocalStorage)
+    }
+  })
 
   useEffect(() => {
     fetch("https://backend-blog-396v.onrender.com/artigos")
       .then(resultado => resultado.json())
       .then((dados) => setArtigos(dados))
-      window.alert("Os artigos na homepage podem demorar a carregar nesse primeiro instante, pois o backend está hospedado em um serviço grátis sem muitos recursos. Em no máximo 1 minuto, tudo estará carregado.")
     window.scrollTo(0, 0)
   }, []);
 
@@ -25,7 +44,7 @@ function Home() {
         <h2>Seja bem-vindo(a) ao blog</h2>
       </div>
       <div className="divArtigos" id="divArtigos">
-        <h3>Artigos do momento</h3>
+        <h3 id="h3">Artigos do momento</h3>
         <div className="layoutCards">
           {artigos.map((artigo, index) => (
             <div className="card" key={index}>
