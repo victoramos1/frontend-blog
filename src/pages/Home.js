@@ -3,7 +3,7 @@ import wp from "../img/wp.jpg"
 import logo from "../img/logo.png"
 import Navbar from "../components/Navbar"
 import { Link } from "react-router-dom"
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 function Home() {
 

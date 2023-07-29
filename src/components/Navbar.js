@@ -36,7 +36,7 @@ function Navbar(props) {
     localStorage.setItem("isLogged", "false")
     toast.success("Logout realizado com sucesso")
     setTimeout(() => {
-      window.location.href = ("/")
+      window.location.href = "https://victoramos1.github.io/frontend-blog/"
       setVerificador("false")
     }, 2000)
   }

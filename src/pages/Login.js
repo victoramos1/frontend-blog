@@ -28,10 +28,6 @@ function Login() {
   }
 
   useEffect(() => {
-    
-  },[])
-
-  useEffect(() => {
     if (token) {
       validacaoLogin()
     }
